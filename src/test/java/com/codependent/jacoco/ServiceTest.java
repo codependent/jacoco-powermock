@@ -11,13 +11,15 @@ import junit.framework.Assert;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({Util.class})
-public class UtilTest {
+public class ServiceTest {
 
+	private Service service = new ServiceImpl();
+	
     @Test
-    public void testSay() throws Exception {
+    public void testOperation() throws Exception {
         PowerMockito.mockStatic(Util.class);
-        Mockito.when(Util.say(Mockito.anyString())).thenReturn("hello:mandy");
-        Assert.assertEquals("hello:mandy", Util.say("sid"));
+        Mockito.when(Util.say(Mockito.anyString())).thenReturn("Bye!");
+        Assert.assertEquals("Bye!", service.operation());
     }
 
 }
