@@ -111,7 +111,7 @@
     </dependencies>
 
 	<properties>
-        <powermock.version>1.5.4</powermock.version>
+        <powermock.version>1.6.4</powermock.version>
         <jacoco.version>0.7.5.201505241946</jacoco.version>
 		<jacoco.outputDir>${project.basedir}/target/jacoco.exec</jacoco.outputDir>
     </properties>
